@@ -1,20 +1,27 @@
 
 language: node_js
 
-dist: trusty
-
-sudo: required
-
 node_js:
   - '6'
 
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      before_deploy:
+        - bash travis/linux.addons/main.sh
+        - OPTIONS="linux $OPTIONS" npm run pack
+        - ls dist/{,linux,mac} || true
+    - os: osx
+      sudo: required
+      before_deploy:
+        - bash travis/mac.addons/main.sh
+        - OPTIONS="mac $OPTIONS" npm run pack
+        - ls dist/{,linux,mac} || true
+
 before_script:
   - chmod -R +x sh
-
-before_deploy:
-  - bash addons/main.sh
-  - OPTIONS="linux mac $OPTIONS" npm run pack
-  - ls dist/{,linux,mac} || true
 
 deploy:
   provider: releases

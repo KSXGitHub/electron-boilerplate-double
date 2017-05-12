@@ -1,0 +1,1 @@
+bash addons/pkgs.sh
