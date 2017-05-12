@@ -18,7 +18,6 @@ before_deploy:
 
 deploy:
   provider: releases
-  api_key: $GITHUB_RELEASE_OAUTH
   skip_cleanup: true
   file_glob: true
   file:
