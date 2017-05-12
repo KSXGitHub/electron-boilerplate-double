@@ -11,10 +11,16 @@ node_js:
 before_script:
   - chmod -R +x sh
 
-before_deploy:
-  - bash addons/main.sh
-  - OPTIONS="linux mac $OPTIONS" npm run pack
-  - ls dist/{,linux,mac} || true
+jobs:
+  include:
+    - stage: before_deploy
+      script:
+        - bash addons/main.sh
+        - OPTIONS="linux $OPTIONS" npm run pack
+    - stage: before_deploy
+      script:
+        - bash addons/main.sh
+        - OPTIONS="mac $OPTIONS" npm run pack
 
 deploy:
   provider: releases
