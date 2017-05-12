@@ -1,1 +1,1 @@
-brew install $(cat travis/darwin.addons/*.apt.txt)
+brew install $(cat travis/darwin.addons/*.brew.txt)
