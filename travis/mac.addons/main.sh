@@ -1,1 +1,1 @@
-bash addons/pkgs.sh
+bash travis/mac.addons/pkgs.sh

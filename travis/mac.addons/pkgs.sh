@@ -1,1 +1,1 @@
-brew install $(cat addons/*.apt.txt)
+brew install $(cat travis/mac.addons/*.apt.txt)
