@@ -1,2 +1,2 @@
-bash travis/mac.addons/ppas.sh
-bash travis/mac.addons/pkgs.sh
+bash travis/linux.addons/ppas.sh
+bash travis/linux.addons/pkgs.sh
