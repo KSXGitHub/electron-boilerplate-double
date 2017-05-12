@@ -17,7 +17,7 @@ before_script:
 
 before_deploy:
   - bash travis/$(node -p 'process.platform').addons/main.sh
-  - OPTIONS="linux mac $OPTIONS" npm run pack
+  - npm run pack
   - ls dist/{,linux,mac} || true
 
 deploy:
