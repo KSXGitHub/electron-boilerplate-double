@@ -16,7 +16,6 @@ before_script:
   - chmod -R +x sh
 
 before_deploy:
-  - bash travis/$(node -p 'process.platform').addons/main.sh
   - npm run pack
   - ls dist/{,linux,mac} || true
 
