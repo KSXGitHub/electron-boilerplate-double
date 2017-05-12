@@ -12,7 +12,7 @@ before_script:
   - chmod -R +x sh
 
 before_deploy:
-  - bash addons/main.sh
+  - bash travis/${TRAVIS_OS_NAME}.addons/main.sh
   - OPTIONS="linux mac $OPTIONS" npm run pack
   - ls dist/{,linux,mac} || true
 
