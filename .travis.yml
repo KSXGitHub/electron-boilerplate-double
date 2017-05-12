@@ -16,6 +16,7 @@ before_script:
   - chmod -R +x sh
 
 before_deploy:
+  - export CSC_IDENTITY_AUTO_DISCOVERY=false
   - bash travis/$(node -p 'process.platform').addons/main.sh
   - npm run pack
   - ls dist/{,linux,mac} || true
