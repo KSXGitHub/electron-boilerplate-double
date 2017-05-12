@@ -24,7 +24,6 @@
   "build": {
     "appId": "app.electron.demo",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
-    "identity": null,
     "linux": {
       "target": [
         "AppImage",
@@ -43,6 +42,7 @@
       ]
     },
     "mac": {
+      "identity": null,
       "target": [
         "mas",
         "zip",
