@@ -28,6 +28,7 @@ test_script:
 
 build_script:
   - cmd: npm run pack
+  - cmd: node sh/cmd/appx.js
 
 artifacts:
   - path: dist\*.*
