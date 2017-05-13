@@ -32,10 +32,10 @@ build_script:
   # Windows Store build
   - cmd: npm install --global electron-windows-store
   - cmd: >
-      electron-windows-store
-      --input-directory dist\win-unpacked
-      --output-directory dist\appx
-      --flatten true
+      bash -c 'echo n | electron-windows-store
+      --input-directory dist/win-unpacked
+      --output-directory dist/appx
+      --flatten true'
   - cmd: dir dist\appx
 
 artifacts:
