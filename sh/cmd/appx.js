@@ -21,6 +21,7 @@ const packageDisplayName = packageName
 convert({
   packageVersion: appInfo.version,
   packageDescription: appInfo.description,
+  publisher: 'CN=developmentca',
   containerVirtualization: false,
   flatten: true,
   packageName,
