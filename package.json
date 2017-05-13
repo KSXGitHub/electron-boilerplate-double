@@ -16,6 +16,7 @@
     "lint": "bash sh/lint.sh",
     "dist": "bash sh/dist.sh",
     "pack": "bash sh/pack.sh",
+    "appx": "bash sh/appx.sh",
     "remake-package-json": "node sh/remake-package-json",
     "clean": "bash 'sh/clean.sh'",
     "fix": "bash 'sh/fix.sh'",
