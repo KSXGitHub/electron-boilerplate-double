@@ -1,5 +1,6 @@
 'use strict'
 const {resolve} = require('path')
+const {exit} = require('process')
 const convert = require('electron-windows-store')
 const appInfo = require('../../app/package.json')
 
@@ -26,4 +27,15 @@ convert({
   packageDisplayName,
   inputDirectory,
   outputDirectory
-})
+}).then(
+  value => {
+    console.log('Convert result', {value})
+    console.log('Directory', {outputDirectory}, require('fs').readdirSync(outputDirectory))
+    exit(0)
+  }
+).catch(
+  error => {
+    console.log('Errored', {error})
+    exit(1)
+  }
+)
