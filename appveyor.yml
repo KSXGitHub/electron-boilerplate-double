@@ -36,7 +36,7 @@ build_script:
       --input-directory dist\win-unpacked
       --output-directory dist\appx
       --flatten true
-      && dir dist\appx
+  - cmd: dir dist\appx
 
 artifacts:
   - path: dist\*.*
