@@ -36,6 +36,7 @@
     },
     "win": {
       "target": [
+        "appx",
         "nsis",
         "zip",
         "7z"
