@@ -6,7 +6,7 @@ const appInfo = require('../../app/package.json')
 
 const projdir = resolve(__dirname, '../..')
 const distdir = resolve(projdir, 'dist')
-const inputDirectory = resolve(distdir, 'win-unpacked')
+const inputDirectory = resolve(distdir, 'win-ia32-unpacked')
 const outputDirectory = resolve(distdir, 'appx')
 
 const packageName = appInfo.name
