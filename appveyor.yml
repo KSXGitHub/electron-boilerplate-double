@@ -31,7 +31,6 @@ build_script:
 
   # Windows Store build
   - cmd: npm install --global electron-windows-store
-  - ps: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
   - cmd: >
       electron-windows-store
       --input-directory dist\win-unpacked
