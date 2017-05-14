@@ -27,6 +27,7 @@
     "linux": {
       "target": [
         "freebsd",
+        "p5p",
         "AppImage",
         "pacman",
         "deb",
