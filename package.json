@@ -37,6 +37,7 @@
     "win": {
       "target": [
         "nsis",
+        "nsis-web",
         "zip",
         "7z"
       ]
