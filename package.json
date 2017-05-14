@@ -24,8 +24,8 @@
   "build": {
     "appId": "app.electron.demo",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
-    "artifactName": "${productName}.v${version}.${os}-${arch}.${ext}",
     "linux": {
+      "artifactName": "${productName}.v${version}.${os}-${arch}.${ext}",
       "target": [
         "freebsd",
         "AppImage",
@@ -37,6 +37,7 @@
       ]
     },
     "win": {
+      "artifactName": "${productName}.v${version}.${os}-${arch}.${ext}",
       "target": [
         "nsis",
         "zip",
@@ -44,6 +45,7 @@
       ]
     },
     "mac": {
+      "artifactName": "${productName}.v${version}.${os}-${arch}.${ext}",
       "target": [
         "mas",
         "zip",
