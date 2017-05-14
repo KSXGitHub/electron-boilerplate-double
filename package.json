@@ -26,7 +26,9 @@
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "linux": {
       "target": [
+        "apk",
         "freebsd",
+        "p5p",
         "AppImage",
         "pacman",
         "deb",
@@ -38,6 +40,7 @@
     "win": {
       "target": [
         "nsis",
+        "nsis-web",
         "zip",
         "7z"
       ]
