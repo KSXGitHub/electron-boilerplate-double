@@ -49,6 +49,9 @@
         "7z"
       ],
       "categories": "public.app-category.utilities"
+    },
+    "nsis": {
+      "artifactName": "${name}-v${version}.${os}-${arch}.${ext}"
     }
   }
 }
