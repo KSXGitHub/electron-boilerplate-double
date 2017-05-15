@@ -1,1 +1,1 @@
-yarn test && electron ./app
+npm test && electron ./app
