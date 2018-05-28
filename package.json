@@ -3,13 +3,13 @@
   "main": "app/main.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "devDependencies": {
-    "electron": "^1.6.6",
-    "electron-builder": "^8.6.0",
-    "electron-builder-squirrel-windows": "^17.0.1",
-    "js-yaml": "^3.8.3",
-    "htmllint-cli": "^0.0.6",
-    "stylelint": "^7.10.1",
-    "standard": "^10.0.2"
+    "electron": "1.8.7",
+    "electron-builder": "8.7.0",
+    "electron-builder-squirrel-windows": "17.9.0",
+    "js-yaml": "3.11.0",
+    "htmllint-cli": "0.0.6",
+    "stylelint": "7.13.0",
+    "standard": "10.0.3"
   },
   "scripts": {
     "lint": "bash sh/lint.sh",
