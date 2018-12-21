@@ -4,7 +4,7 @@
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "devDependencies": {
     "electron": "^4.0.0",
-    "electron-builder": "^8.6.0",
+    "electron-builder": "^20.0.0",
     "electron-builder-squirrel-windows": "^17.0.1",
     "js-yaml": "^3.8.3",
     "htmllint-cli": "^0.0.6",
